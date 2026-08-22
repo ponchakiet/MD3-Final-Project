@@ -119,6 +119,7 @@ public class AssessmentRoundServiceImpl implements IAssessmentRoundService {
     }
 
     @Override
+    @Transactional
     public void deleteRound(Long id) {
         AssessmentRound round = assessmentRoundRepository.findById(id).orElseThrow(
                 () -> new ResourceNotFoundException("Lỗi: Không tìm thấy đợt đánh giá với id: " + id)

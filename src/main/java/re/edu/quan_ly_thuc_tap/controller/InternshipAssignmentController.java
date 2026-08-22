@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/internship_assignments")
+@RequestMapping("/api/internship-assignments")
 public class InternshipAssignmentController {
 
     private final IInternshipAssignmentService assignmentService;
